@@ -5,7 +5,12 @@ Brown text: \u001B[32m
 reset text: \u001B[0m
 background: \u001B[m
 moveUpLine: \033[1A
-clearLine:  \x1b[2K
+clearColor:  \x1b[2K
+
+moves:
+    pawn {1,2}
+    
+
 
 printGrid():
     -prints the grid out
