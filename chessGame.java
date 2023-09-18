@@ -53,9 +53,9 @@ public class chessGame {
                 }
                 else if(row == 1 || row == 6){
                     if(row == 1)
-                        Board[row][col] = "\u001B[30 " + "P" + Pieces[8] + "\u001B[0m";
+                        Board[row][col] = "\u001B[30m" + Pieces[8] + "\u001B[0m";
                     else if(row == 6)
-                        Board[row][col] = "\u001B[37 " + "P" + Pieces[8] + "\u001B[0m";
+                        Board[row][col] = "\u001B[37m" + Pieces[8] + "\u001B[0m";
                 }
                 else
                     Board[row][col] = "  ";
@@ -65,8 +65,3 @@ public class chessGame {
     }
 }
 
-            }
-        }
-            return Board;
-    }
-}
