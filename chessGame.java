@@ -1,6 +1,6 @@
 public class chessGame {
     public static void main(String... args){
-        String Board[][] = startGame();
+        
         for(int i = 0; i < 8;i++){
             for(int x = 0; x < 8; x++){
                 System.out.println("|" + Board[i][x] + "|");
@@ -9,6 +9,7 @@ public class chessGame {
 
     }
     public chessGame(String color){
+        String Board[][] = this.startGame();
         String playerColor;
         String aiColor
         if(color.equalsIgnoreCase("white") || color.equalsIgnoreCase("black"){
