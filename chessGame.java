@@ -1,18 +1,17 @@
+import java.io.bufferedReader; //import my input functions
 public class chessGame {
     public static void main(String... args){
-        
-        for(int i = 0; i < 8;i++){
-            for(int x = 0; x < 8; x++){
-                System.out.println("|" + Board[i][x] + "|");
-            }
-        }
+        bufferedReader input = new bufferedReader();
+        System.out.println("What piece color do you want? White or Black, White goes first");
+        chessGame game = new chessGame(input.readLine());
 
     }
+
     public chessGame(String color){
         String Board[][] = this.startGame();
         String playerColor;
         String aiColor
-        if(color.equalsIgnoreCase("white") || color.equalsIgnoreCase("black"){
+        if(color.equalsIgnoreCase("white") || color.equalsIgnoreCase("black")){
             playerColor = color;
             aiColor = color.equalsIgnoreCase("white") ? "black" : "white";
         }
