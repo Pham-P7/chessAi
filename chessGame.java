@@ -8,7 +8,15 @@ public class chessGame {
         }
 
     }
-    public static String[][] startGame(){
+    public chessGame(String color){
+        String playerColor;
+        String aiColor
+        if(color.equalsIgnoreCase("white") || color.equalsIgnoreCase("black"){
+            playerColor = color;
+            aiColor = color.equalsIgnoreCase("white") ? "black" : "white";
+        }
+    }
+    public String[][] startGame(){
         String[] Pieces = {"Rk","Kt","Bp","Qn","Kg","Bp","Kt","Rk","Pn"};
         String[][] Board = new String[8][8];
         for(int row = 0;row < 8;row++){
