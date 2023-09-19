@@ -2,12 +2,12 @@ import java.io.BufferedReader; //import my input functions
 import java.io.IOException;
 import java.io.InputStreamReader;
 public class chessGame {
-    final String redCode = "\u001B[31m";
+    final String redCode = "\u001B[31m"; //all required variables
     final String whiteCode = "\u001B[37m";
     final String resetCode = "\u001B[0m";
     final String[] Pieces = {"Rk","Kt","Bp","Qn","Kg","Bp","Kt","Rk","Pn"};
     String Board[][];
-    String playerColor, aiColor;
+    private String playerColor, aiColor;
     public static void main(String... args) throws IOException{ //main function for starting the game
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("What piece color do you want? White or Red, White goes first");
@@ -65,4 +65,3 @@ public class chessGame {
         return Board; // returns a fresh board
     }
 }
-
