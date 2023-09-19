@@ -1,5 +1,5 @@
 notes for myself
-Black text: \u001B[30m
+Red text: \u001B[31m
 White text: \u001B[37m
 Brown text: \u001B[32m
 reset text: \u001B[0m
